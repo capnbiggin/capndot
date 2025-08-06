@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+pushd ~/Documents/My-Brain
+git pull
+popd
+
+pushd ~/dotfiles
+git pull
+popd
