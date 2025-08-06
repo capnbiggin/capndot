@@ -24,4 +24,7 @@ for pkg in $HYPR; do
 done
 
 printf "\n${G}Linking Hyperland config files${C}\n"
-ln -s ~/dotfiles/config/.config/hypr ~/.config/hypr
+ln -s ~/.local/share/capndot/config/hypr ~/.config/hypr
+ln -s ~/.local/share/capndot/config/waybar/ ~/.config/waybar
+ln -s ~/.local/share/capndot/config/waypaper/ ~/.config/waypaper
+ln -s ~/.local/share/capndot/config/rofi ~/.config/rofi

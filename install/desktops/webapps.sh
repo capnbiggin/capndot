@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Ensureing the application directory exist
+mkdir -p ~/.local/share/applications
+
 source ~/dotfiles/install/shell/functions
 
 web2app "Google Messages" https://messages.google.com/web/conversations https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-messages.png
