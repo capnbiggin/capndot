@@ -6,3 +6,5 @@ yay -S --noconfirm --needed \
   wl-clipboard fastfetch btop \
   man tldr less whois plocate bash-completion \
   alacritty ghostty kitty
+
+ln -s ~/.local/share/capndot/
