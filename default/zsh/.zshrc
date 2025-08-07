@@ -1,14 +1,14 @@
 # ~/.config/zsh/.zshrc
 
 # source global shell alias & variable files
-[ -f "$XDG_CONFIG_HOME/shell/aliases" ] && source "$XDG_CONFIG_HOME/shell/aliases"
+[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
 
 
 ##################################
 #      Enviroment Variables      #
 ##################################
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$CAPNDOT/bin/"
 
 
 export EDITOR=nvim

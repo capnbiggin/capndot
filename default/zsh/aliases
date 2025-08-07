@@ -52,7 +52,7 @@ alias n.='nvim .'
 # Mis. Aliases
 alias c='clear'
 alias x='exit'
-alias szsh='source ~/.config/zsh/.zshrc'
+alias szsh='source ~/.local/share/capndot/default/zsh/.zshrc'
 
 # git
 alias ga='git add'

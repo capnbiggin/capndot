@@ -4,6 +4,6 @@ pushd ~/Documents/My-Brain
 git pull
 popd
 
-pushd ~/dotfiles
+pushd ~/.local/share/capndot
 git pull
 popd

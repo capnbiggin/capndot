@@ -2,6 +2,9 @@
 
 # Link capndot configs
 ln -s ~/.local/share/capndot/config/* ~/.config/
+ln -s ~/.local/share/capndot/home-config/.fehbg ~/.fehbg
+ln -s ~/.local/share/capndot/home-config/.xinitrc ~/.xinitrc
+ln -s ~/.local/share/capndot/home-config/.zshenv ~/.zshenv
 
 # Set identification from install inputs
 if [[ -n "${GIT_USER_NAME//[[:space:]]/}" ]]; then

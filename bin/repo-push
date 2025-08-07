@@ -6,7 +6,7 @@ git commit -m "automatic commit"
 git push
 popd
 
-pushd ~/dotfiles
+pushd ~/.local/share/capndot
 git add .
 git commit -m "automatic commit"
 git push
