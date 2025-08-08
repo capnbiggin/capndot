@@ -14,12 +14,13 @@
 
   // Waybar
   "modules-left": [
-    "clock",
+    "hyprland/workspaces", 
     "hyprland/window"
   ],
 
   "modules-center": [
-    "hyprland/workspaces", 
+    "clock",
+    "power-profiles-daemon"
   ],
 
   "modules-right": [

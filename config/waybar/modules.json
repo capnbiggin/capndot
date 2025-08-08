@@ -14,7 +14,7 @@
       "8": "8",
       "9": "9"
     },
-    "persistent_workspaces": {
+    "persistent-workspaces": {
       "*": 5
     }
   },
@@ -26,7 +26,7 @@
   },
   // on-click-right
   "clock": {
-    "format": " {:%H:%M} ",
+    "format": " {:%I:%M} ",
     "format-alt": " {:%A, %B %d, %Y (%R)} ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -122,5 +122,17 @@
     "on-click": "sleep 0.2;rofi -show drun -replace",
     "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip-format": "LeftClick:Application Launcher/nRightClick:Show Keybindings"
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
   }
 }
