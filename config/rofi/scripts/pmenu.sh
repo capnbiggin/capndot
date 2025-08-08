@@ -1,6 +1,6 @@
 #!/bin/bash
 
-theme="$HOME/.config/rofi/themes/pmenu.rasi"
+#theme="$HOME/.config/rofi/themes/pmenu.rasi"
 
 lock=" Lock"
 logout="󰍃 Logout"
@@ -12,8 +12,7 @@ selected_option=$(echo "$poweroff
 $lock
 $reboot
 $sleep
-$logout" | rofi -dmenu -i -p "Powermenu:" \
-  -theme ${theme})
+$logout" | rofi -dmenu -i -p "⏻ Powermenu:") # -theme ${theme})
 
 if [ "$selected_option" == "$lock" ]; then
   hyprlock

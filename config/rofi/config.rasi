@@ -1,11 +1,9 @@
-configuration {
-    show-icons: true;
-
-    display-ssh:    "󰣀 ssh:";
-    display-run:    "󱓞 run:";
-    display-drun:   "󰣖 drun:";
+oonfiguration {
+    display-ssh: "󰣀 ssh:";
+    display-run: "󱓞 run:";
+    display-drun: " Applications:";
     display-window: "󱂬 window:";
-    display-combi:  "󰕘 combi:";
+    display-combi: "󰕘 combi:";
     display-filebrowser: "󰉋 filebrowser:";
 }
 

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+BIN_PATH=~/.local/share/capndot/bin
+
+menu() {
+  echo -e "$2" | rofi -dmenu -p "$1…"
+}
+
+terminal() {
+  alacritty --class=Capndot -e $1
+}
+
+install_menu() {
+  case $(menu "Install" "󰣇  Package\n  Web App\n") in
+  *Pacage*) ;;
+  *Web*) terminal $BIN_PATH/webapp-install ;;
+  esac
+}
+
+go_to_menu() {
+  case $(menu "Start" " Apps\n󰉉  Install") in
+  *Apps*) rofi -show drun -show-icons -display-drun "Applications" ;;
+  *Install*) install_menu ;;
+  esac
+}
+
+go_to_menu
