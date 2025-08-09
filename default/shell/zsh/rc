@@ -10,7 +10,7 @@
 #      Enviroment Variables      #
 ##################################
 
-export PATH="$PATH:$CAPNDOT/bin/"
+export PATH="$PATH:$HOME/.local/share/capndot/bin"
 
 
 export EDITOR="nvim"
