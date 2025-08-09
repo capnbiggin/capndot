@@ -1,7 +1,7 @@
 # ~/.config/zsh/.zshrc
 
 # source global shell alias & variable files
-[ -f "$ZDOTDIR/aliases" ] && source "$ZDOTDIR/aliases"
+[ -f "$HOME/.local/share/capndot/default/shell/aliases" ] && source "$HOME/.local/share/capndot/default/shell/aliases"
 
 
 ##################################

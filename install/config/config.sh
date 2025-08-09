@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
+# makeing ZDOTDIR directory for zsh plugins
+mkdir -p ~/.config/zsh/plugins/
+
 # Link capndot configs
 ln -s ~/.local/share/capndot/config/* ~/.config/
-ln -s ~/.local/share/capndot/home-config/.fehbg ~/.fehbg
-ln -s ~/.local/share/capndot/home-config/.xinitrc ~/.xinitrc
-ln -s ~/.local/share/capndot/home-config/.zshenv ~/.zshenv
+ln -s ~/.local/share/capndot/default/shell/zshenv ~/.zshenv
+ln -s ~/.local/share/capndot/default/shell/zshrc ~/.config/zsh/.zshrc
+ln -s ~/.local/share/capndot/default/shell/zprofile ~/.config/zsh/.zprofile
 
 # Set identification from install inputs
 if [[ -n "${GIT_USER_NAME//[[:space:]]/}" ]]; then

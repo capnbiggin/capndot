@@ -11,17 +11,42 @@ terminal() {
 }
 
 install_menu() {
-  case $(menu "Install" "󰣇  Package\n  Web App\n") in
-  *Pacage*) ;;
+  case $(menu "Install" "󰣇  Package\n  Web App") in
+  *Package*) terminal $BIN_PATH/capndot-pkg-install ;;
   *Web*) terminal $BIN_PATH/webapp-install ;;
+  *) main_menu ;;
   esac
 }
 
-go_to_menu() {
-  case $(menu "Start" " Apps\n󰉉  Install") in
+learn_menu() {
+  case $(menu "Learn" "  Keybindings\n  Hyprland\n󰣇  Arch\n  Neovim\n󱆃  Bash") in
+  *Keybindings*) $BIN_PATH/keybindings ;;
+  *Hyprland*) setsid chromium --new-window --app="https://wiki.hypr.land/" & ;;
+  *Arch*) setsid chromium --new-window --app="https://wiki.archlinux.org/title/Main_page" & ;;
+  *Bash*) setsid chromium --new-window --app="https://devhints.io/bash" & ;;
+  *Neovim*) setsid chromium --new-window --app="https://www.lazyvim.org/keymaps" & ;;
+  *) main_menu ;;
+  esac
+}
+
+system_menu() {
+  case $(menu "System" "  Lock\n󰤄  Suspend\n󰜉  Restart\n󰐥  Shutdown") in
+  *Lock*) hyprlock ;;
+  *Suspend*) systemctl suspend ;;
+  *Restart*) systemctl reboot ;;
+  *Shutdown*) systemctl poweroff ;;
+  *) main_menu ;;
+  esac
+}
+
+main_menu() {
+  case $(menu "Start" " Apps\n󰉉  Install\n󰧑  Learn\n  System\n- Info") in
   *Apps*) rofi -show drun -show-icons -display-drun "Applications" ;;
   *Install*) install_menu ;;
+  *Learn*) learn_menu ;;
+  *System*) system_menu ;;
+  *Info*) alacritty --class=About --title=About -e bash -c 'fastfetch; read -n 1 -s' ;;
   esac
 }
 
-go_to_menu
+main_menu

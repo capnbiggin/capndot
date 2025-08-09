@@ -28,13 +28,6 @@ printf "\n${G}Changing default shell to zsh${C}\n"
 hash -r
 chsh -s $(which zsh)
 
-printf "\n${B}linking zsh configs${C}\n"
-ln -s ~/dotfiles/config/.zshenv ~/.zshenv
-ln -s ~/dotfiles/config/.config/zsh/.zprofile ~/.config/zsh/.zprofile
-ln -s ~/dotfiles/config/.config/zsh/.zshrc ~/.config/zsh/.zshrc
-
 sleep 0.2
 
 popd
-
-printf "\n${G}You will now need to 'reboot' to use Z Shell.${C}\n"
