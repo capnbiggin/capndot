@@ -10,9 +10,17 @@ terminal() {
   alacritty --class=Capndot -e $1
 }
 
+remove_menu() {
+  case $(menu "Removw" "󰣇  Package\n  Web App") in
+  *Package*) terminal $BIN_PATH/pkg-remove ;;
+  *Web*) terminal $BIN_PATH/webapp-remove ;;
+  *) main_menu ;;
+  esac
+}
+
 install_menu() {
   case $(menu "Install" "󰣇  Package\n  Web App") in
-  *Package*) terminal $BIN_PATH/capndot-pkg-install ;;
+  *Package*) terminal $BIN_PATH/pkg-install ;;
   *Web*) terminal $BIN_PATH/webapp-install ;;
   *) main_menu ;;
   esac
@@ -40,12 +48,13 @@ system_menu() {
 }
 
 main_menu() {
-  case $(menu "Start" " Apps\n󰉉  Install\n󰧑  Learn\n  System\n- Info") in
+  case $(menu "Start" " Apps\n󰉉  Install\n󰉉  Uninstall\n󰧑  Learn\n  System\n- About") in
   *Apps*) rofi -show drun -show-icons -display-drun "Applications" ;;
   *Install*) install_menu ;;
+  *Uninstall*) remove_menu ;;
   *Learn*) learn_menu ;;
   *System*) system_menu ;;
-  *Info*) alacritty --class=About --title=About -e bash -c 'fastfetch; read -n 1 -s' ;;
+  *About*) alacritty --class=About --title=About -e bash -c 'fastfetch; read -n 1 -s' ;;
   esac
 }
 
