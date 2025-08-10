@@ -32,3 +32,17 @@ source $CDOT_INSTALL/config/identification.sh
 source $CDOT_INSTALL/config/config.sh
 source $CDOT_INSTALL/configzsh.sh
 source $CDOT_INSTALL/configzsh-plugins.sh
+
+# Desktop
+show_logo
+printf "\nInstalling Desktop...\n"
+source $CDOT_INSTALL/desktops/hyprland.sh
+source $CDOT_INSTALL/desktop/webapps.sh
+
+# Dev
+show_logo
+source $CDOT_INSTALL/development/terminal.sh
+source $CDOT_INSTALL/development/development.sh
+source $CDOT_INSTALL/development/nvim.sh
+source $CDOT_INSTALL/development/docker.sh
+source $CDOT_INSTALL/development/firewall.sh

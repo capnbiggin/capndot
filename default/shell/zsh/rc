@@ -15,7 +15,7 @@ export PATH="$PATH:$HOME/.local/share/capndot/bin"
 
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
-export BET_THEME=ansi
+export BAT_THEME=ansi
 
  #Command history
 HISTFILE="$XDG_CACHE_HOME/.zsh_history"
