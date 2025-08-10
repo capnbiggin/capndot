@@ -112,7 +112,7 @@
   },
 
   "custom/updates": {
-    "exec": "$HOME/.local/scripts/pacupdates.sh",
+    "exec": "$HOME/.local/share/capndot/bin/scripts/pacupdates.sh",
     "interval": "3600",
     "format": " 󱧕 {} "
   },

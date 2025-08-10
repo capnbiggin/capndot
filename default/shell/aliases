@@ -42,7 +42,7 @@ alias ping='ping -c 5'
 # pacman
 alias i='yay -S --noconfirm --needed'                   # Install packages
 alias s='yay -Ss'
-alias syu='yay -Syu --noconfirm --needed'                        # update pacman & packages
+alias Syu='yay -Syu --noconfirm --needed'                        # update pacman & packages
 
 # Editor
 alias n='nvim'
