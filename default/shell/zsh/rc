@@ -58,13 +58,14 @@ autoload -U colors && colors
 #           Prompt               #
 ##################################
 
-PURE_GIT_PULL=0
+if [ -d $HOME/.config/zsh/plugins/pure ]; then
+  PURE_GIT_PULL=0
 
-fpath+=($HOME/.config/zsh/plugins/pure)
+  fpath+=($HOME/.config/zsh/plugins/pure)
 
-autoload -U promptinit; promptinit
-prompt pure
-
+  autoload -U promptinit; promptinit
+  prompt pure
+fi
 
 #################################
 #          Sources              #
