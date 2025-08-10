@@ -22,7 +22,6 @@ printf "\n${R}Removing old Z Shell configs.${C}\n"
 
 printf "\n${B}Downloading Z Shell plugins${C}\n"
 mkdir -p ~/.config/zsh/plugins
-source ~/dotfiles/config/Install/config/zsh-plugins.sh
 
 printf "\n${G}Changing default shell to zsh${C}\n"
 hash -r

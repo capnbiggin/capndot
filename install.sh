@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 CDOT_INSTALL=~/.local/share/capndot/install
 
 # Exit immediately if a command exits with a non-zero status
@@ -29,4 +28,7 @@ source $CDOT_INSTALL/preflight/presentation.sh
 # Config
 show_logo
 printf "\nStarting Capndot Install\n"
-source
+source $CDOT_INSTALL/config/identification.sh
+source $CDOT_INSTALL/config/config.sh
+source $CDOT_INSTALL/configzsh.sh
+source $CDOT_INSTALL/configzsh-plugins.sh
