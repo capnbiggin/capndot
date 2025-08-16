@@ -18,6 +18,7 @@ alias .....='cd ../../../..'
 alias dot='cd ~/dotfiles && printf " \U000F17A9 " && pwd'
 alias cdot='cd ~/.local/share/capndot && printf " \U000F17A9 " && pwd'
 alias brain='cd ~/Documents/My-Brain && printf " \U000F17A9 " && pwd'
+alias aliases='nvim ~/.local/share/capndot/default/shell/aliases'
 alias cd="zd"
 zd() {
   if [ $# -eq 0 ]; then
@@ -40,7 +41,7 @@ alias mkdir='mkdir -p'
 alias ping='ping -c 5'
 
 # pacman
-alias i='yay -S --noconfirm --needed'                   # Install packages
+alias i='yay -S --noconfirm --needed'                            # Install packages
 alias s='yay -Ss'
 alias Syu='yay -Syu --noconfirm --needed'                        # update pacman & packages
 
@@ -63,3 +64,4 @@ alias gu='git push'
 alias gd='git pull'
 
 alias linutil='curl -fsSL https://christitus.com/linux | sh'
+

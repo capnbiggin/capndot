@@ -1,0 +1,5 @@
+####################################
+#           ~/.bashrc              #
+####################################
+
+[[ -f ~/.local/share/capndot/default/shell/bash/rc ]] && source ~/.local/share/capndot/default/shell/bash/rc
