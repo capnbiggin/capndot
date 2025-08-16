@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
+
 blk='\[\033[01;30m\]' # Black
 red='\[\033[01;31m\]' # Red
 grn='\[\033[01;32m\]' # Green
@@ -21,3 +23,14 @@ PS1+=${grn}'\n  '${clr}
 
 # Aliases
 [[ -f ~/.local/share/capndot/default/shell/aliases ]] && source ~/.local/share/capndot/default/shell/aliases
+
+# History
+HISTCONTROL=ignoredups
+HISTSIZE=100000
+HISTFILESIZE=$HISTSIZE
+HISTFILE='$HOME/.cache/.bash_history'
+
+shopt -s histappend
+
+# Path
+PATH="PATH:$HOME/.local/share/capndot/bin"
