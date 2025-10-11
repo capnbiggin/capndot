@@ -6,6 +6,6 @@ git pull
 popd
 
 echo -e "\n"
-pushd ~/.local/share/capndot
+pushd ~/capndot
 git pull
 popd
