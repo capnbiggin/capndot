@@ -5,10 +5,11 @@ G='\033[0;32m' # green color
 R='\033[0;31m' # red color
 
 HYPR=(
-  hyprland-git
+  hyprland
   hypridle
   hyprpicker
   hyprlock
+  hyprpaper
   swww
   wl-clipboard
   rofi
