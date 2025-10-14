@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-CDOT_INSTALL=~/.local/share/capndot/install
+CDOT_INSTALL=~/capndot/install
 
 # Exit immediately if a command exits with a non-zero status
 set -e
