@@ -5,7 +5,6 @@ B='\033[0;34m'
 
 mkdir -p ~/.config/zsh/plugins
 
-cp -r ~/.local/share/capndot/default/shell/bashrc ~/.bashrc
 printf "\n${B}Cloning plugin zsh-syntax-highlighting${C}\n"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/plugins/zsh-syntax-highlighting/
 sleep 0.2

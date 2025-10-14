@@ -15,10 +15,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias dot='cd ~/dotfiles && printf " \U000F17A9 " && pwd'
-alias cdot='cd ~/.local/share/capndot && printf " \U000F17A9 " && pwd'
+alias cdot='cd ~/capndot && printf " \U000F17A9 " && pwd'
 alias brain='cd ~/Documents/My-Brain && printf " \U000F17A9 " && pwd'
-alias aliases='nvim ~/.local/share/capndot/default/shell/aliases'
+alias aliases='nvim ~/capndot/shell/aliases'
 alias cd="zd"
 zd() {
   if [ $# -eq 0 ]; then
@@ -42,7 +41,7 @@ alias ping='ping -c 5'
 
 # pacman
 alias i='yay -S --noconfirm --needed'                            # Install packages
-alias s='yay -Ss'
+alias s='yay -Ss'                                                # Search packages
 alias Syu='yay -Syu --noconfirm --needed'                        # update pacman & packages
 
 # Editor

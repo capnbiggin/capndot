@@ -20,9 +20,6 @@ printf "\n${R}Removing old Z Shell configs.${C}\n"
 [ -f ~/.zshenv ] && rm -rf ~/.zshenv
 [ -f $ZDOTDIR/.zshrc ] && rm -rf $ZDOTDIR/.zshrc $ZDOTDIR/.zprofile
 
-printf "\n${B}Downloading Z Shell plugins${C}\n"
-mkdir -p ~/.config/zsh/plugins
-
 printf "\n${G}Changing default shell to zsh${C}\n"
 hash -r
 chsh -s $(which zsh)

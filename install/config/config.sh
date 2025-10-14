@@ -3,9 +3,6 @@
 # makeing ZDOTDIR directory for zsh plugins
 mkdir -p ~/.config/zsh/plugins/
 
-# Link capndot configs
-ln -s ~/.local/share/capndot/config/* ~/.config/
-
 # Remove old zsh Configs
 rm-rf ~/.zshenv
 rm -rf ~/.config/zsh/.zshrc
@@ -16,5 +13,5 @@ rm -rf ~/.bashrc
 rm -rf ~/.bash_profile
 
 # Link Configs
-cd ~/capndot/
+cd ~/capndot
 stow dotfiles
