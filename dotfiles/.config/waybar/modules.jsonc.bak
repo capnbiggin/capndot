@@ -65,19 +65,23 @@
 
   // network
   "network": {
-    "format-wifi": " 󰤨 {signalStrength}% ",
-    "format-ethernet": " 󰈀 Connected ",
-    "format-linked": " 󰈀 {ifname} (No IP) ",
-    "format-disconnected": " 󰤭 Disconnected ",
-    "format-alt": " {ifname}: {ipaddr}/{cidr} ",
-    "tooltip-format": "{essid} - {ifname} via {gwaddr}",
-    "on-click-right": "iwgtk"
+    "format-icons": [" 󰤯 ", " 󰤟 ", " 󰤢 ", " 󰤥 ", " 󰤨 "],
+    "format": "{icon} ",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂",
+    "format-disconnected": "󰤮",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+    "spacing": 1,
+    "on-click": "omarchy-launch-wifi"
   },
 
   // CPU
   "cpu": {
     "format": " 󰍛 {usage} %",
-    "interval": 1,
+    "interval": 5,
     "min-length": 6,
     "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}%",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
