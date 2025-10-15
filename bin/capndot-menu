@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BIN_PATH=~/.local/share/capndot/bin
+BIN_PATH=~/capndot/bin
 
 menu() {
   echo -e "$2" | rofi -dmenu -p "$1…"
