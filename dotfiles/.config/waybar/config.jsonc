@@ -12,7 +12,8 @@
     "network",
     "pulseaudio",
     "cpu",
-    "battery"
+    "battery",
+    "power-profiles-daemon"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -66,7 +67,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "omarchy-launch-wifi"
+    "on-click": "~/capndot/bin/wifi-menu"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -126,5 +127,16 @@
   "tray": {
     "icon-size": 12,
     "spacing": 12
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "  ",
+      "performance": "  ",
+      "balanced": "  ",
+      "power-saver": "  "
+    }
   }
 }

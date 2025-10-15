@@ -31,4 +31,4 @@ HISTFILE='$HOME/.cache/.bash_history'
 shopt -s histappend
 
 # Path
-PATH="PATH:$HOME/.local/share/capndot/bin"
+PATH="PATH:$HOME/capndot/bin:$HOME/.local/bin"
