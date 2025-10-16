@@ -1,32 +1,33 @@
 #!/usr/bin/env bash
 
-DEVS=(
-  wget
+PACKAGES=(
+  alacritty
+  bat
+  btop
+  cliphist
   curl
-  unzip
+  eza
+  fastfetch
+  fd
+  fzf
+  ghostty
   inetutils
   impala
-  fd
-  eza
-  fzf
-  ripgrep
-  zoxide
-  bat
   jq
-  wl-clipboard
-  cliphist
-  fastfetch
-  btop
-  man
-  tldr
-  less
-  whois
-  plocate
-  alacritty
-  ghostty
   kitty
+  less
+  man
+  plocate
+  ripgrep
+  tldr
+  unzip
+  wget
+  whois
+  wiremix
+  wl-clipboard
+  zoxide
 )
 
-for app in "${DEVS[@]}"; do
-  yay -S --noconfirm --needed $app
+for pkg in "${PACKAGES[@]}"; do
+  yay -S --noconfirm --needed $pkg
 done
