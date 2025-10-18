@@ -4,7 +4,7 @@
 mkdir -p ~/.config/zsh/plugins/
 
 # Remove old zsh Configs
-rm-rf ~/.zshenv
+rm -rf ~/.zshenv
 rm -rf ~/.config/zsh/.zshrc
 rm -rf ~/.config/zsh/.zprofile
 
